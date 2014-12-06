@@ -17,7 +17,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "telefones", schema = "agenda")
+@Table(name = "TELEFONES", schema = "AGENDA")
 public class Telefone implements Serializable {
 
     @Id
@@ -25,7 +25,7 @@ public class Telefone implements Serializable {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "id_contato")
+    @JoinColumn(name = "ID_CONTATO")
     private Contato contato;
 
     private String numero;

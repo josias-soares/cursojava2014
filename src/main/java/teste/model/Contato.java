@@ -15,13 +15,12 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "contatos", schema = "agenda")
+@Table(name = "CONTATOS", schema = "AGENDA")
 public class Contato implements Serializable {
 
     @Id
@@ -37,8 +36,8 @@ public class Contato implements Serializable {
     private Calendar dataNascimento;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
-    @JoinColumn(name = "id_contato")
-    @JoinTable(name = "telefones")
+    @JoinColumn(name = "ID_CONTATO")
+    @JoinTable(name = "TELEFONES")
     private final List<Telefone> telefones = new ArrayList<Telefone>();
 
     public Calendar getDataNascimento() {
