@@ -5,10 +5,10 @@
         <class>teste.model.Contato</class>        
         <class>teste.model.Telefone</class>
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://1.1.1.1:3306/cursojava2014"/>
-            <property name="javax.persistence.jdbc.password" value="pass"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.13.138.2:3306/cursojava2014"/>
+            <property name="javax.persistence.jdbc.password" value="s3DSkpHCiSHa"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.user" value="user"/>
+            <property name="javax.persistence.jdbc.user" value="admin3UZJqf2"/>
         </properties>
     </persistence-unit>
 </persistence>
