@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      >
+    <h:head>
+        <title>Agenda de Contatos</title>
+        <h:outputStylesheet name="css/bootstrap.min.css"/>
+        <h:outputStylesheet name="css/bootstrap-theme.min.css"/>
+        <h:outputStylesheet name="css/login.css"/>        
+    </h:head>
+    <h:body>
+        <h:form styleClass="form-signin">
+            <h2 class="form-signin-heading">Entre com o login</h2>
+            
+            <!--<h:messages infoClass="alert alert-info" warnClass="alert alert-warning" errorClass="alert alert-danger" />-->
+            <p:growl/>
+            <h:panelGrid columns="1">
+                <h:inputText styleClass="form-control"  pt:autofocus="true" id="usuario" value="#{loginBean.usuario}">
+                    <f:passThroughAttribute name="placeholder" value="Entre com o usuário"/>
+                </h:inputText>
+
+                <h:inputSecret styleClass="form-control"  pt:placeholder="Entre com a senha" id="senha" value="#{loginBean.senha}"/>
+
+                <h:commandButton styleClass="btn btn-lg btn-primary btn-block"  value="Entrar" action="#{loginBean.login}"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
