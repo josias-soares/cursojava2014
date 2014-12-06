@@ -9,7 +9,7 @@
             <p:growl/>
             <fieldset>
                 <legend>Lista de Contatos<h:button styleClass="btn btn-primary btn-sm navbar-right " value="Novo Contato" outcome="cadastro-contato"/></legend>
-                <p:dataTable lazy="true" emptyMessage="Não há contatos" paginator="true" rows="2"  styleClass="table table-condensed table-hover" value="#{listaContatosBean.contatos}" var="contato">
+                <p:dataTable lazy="true" emptyMessage="Não há contatos" paginator="true" rows="10"  styleClass="table table-condensed table-hover" value="#{listaContatosBean.contatos}" var="contato">
                     <p:column>
                         <f:facet name="header">Nome</f:facet>
                             #{contato.nome}
